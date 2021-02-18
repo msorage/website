@@ -1,0 +1,10 @@
+version: "2"
+
+services: 
+  server:
+    image: custom-nginx
+    build: .
+    ports:
+     - 80:80
+    volumes:
+      - .:/usr/share/nginx/html
